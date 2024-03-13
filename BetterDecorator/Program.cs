@@ -27,15 +27,21 @@ namespace BetterDecorator
         /// </summary>
         /// <param name="args">Argumentos da linha de comando.</param>
         static void Main(string[] args)
-        {   
-            string input = args[0];
-            char decorchar = args[1][0];
-            int repcount = int.Parse(args[2]);
+        {
+            if (args.Length < 3)
+            {
+                Console.WriteLine(Decor());
+            }
+            else
+            {
+                string input = args[0];
+                char decorchar = args[1][0];
+                int repcount = int.Parse(args[2]);
 
-            string decorated = Decor(input, decorchar, repcount);
-            Console.WriteLine(decorated);
+                string decorated = Decor(input, decorchar, repcount);
+                Console.WriteLine(decorated);
+            }
             
-            Console.WriteLine(Decor());
         }
 
         /// <summary>
