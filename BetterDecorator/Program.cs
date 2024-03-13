@@ -18,7 +18,11 @@ namespace BetterDecorator
             string decor = new string(dec, rep);
             return $"{decor} {s} {decor}";
         }
-    
+        
+        /// <summary>
+        /// Metodo que inicia o programa.
+        /// </summary>
+        /// <param name="args">Argumentos da linha de comando.</param>
         static void Main(string[] args)
         {   
             string input = args[0];
