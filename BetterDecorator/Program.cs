@@ -1,7 +1,10 @@
 ﻿using System;
 
 namespace BetterDecorator
-{
+{   
+    /// <summary>
+    /// Programa para decorar uma string com um caractere nos lados.
+    /// </summary>
     class Program
     {
 
