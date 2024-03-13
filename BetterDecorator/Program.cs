@@ -28,12 +28,18 @@ namespace BetterDecorator
         /// <param name="args">Argumentos da linha de comando.</param>
         static void Main(string[] args)
         {   
+            Console.WriteLine(Decor());
             string input = args[0];
             char decorchar = args[1][0];
             int repcount = int.Parse(args[2]);
 
             string decorated = Decor(input, decorchar, repcount);
             Console.WriteLine(decorated);
+        }
+
+        private static string Decor()
+        {
+            return Decor("User did not specify args!", '=', 3);
         }
     }
 }
